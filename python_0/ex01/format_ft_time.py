@@ -1,4 +1,4 @@
-import time as time
+import time
 
 now = time.time()
 today = time.strftime("%B %d %Y")
