@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    """program to print information on a text as :
+    """program to print information on a text:
     -number of characters
     -upper letters
     -lower letters
