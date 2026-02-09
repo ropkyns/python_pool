@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name="paulmart", email="paulmart@student.42.fr"},
+]
+description = "A sample test package"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.9"
+classifiers = [
+]
+
+[project.urls]
+Homepage = "https://github.com/paulmart/ft_package"
