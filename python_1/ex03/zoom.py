@@ -7,10 +7,12 @@ def zoom(image:np.ndarray) -> np.ndarray:
     """Zoooooooooooooooooooooooom"""
     try:
         img_zoom = image[100:500, 450:850]
-        print(f"New shape after slicing: {img_zoom.shape} or {img_zoom.squeeze().shape}")
-        plt.imshow(img_zoom, cmap="gray")
+        img_gray = img_zoom.mean(axis=2)
+        output = img_gray[:, :, None]
+        print(f"New shape after slicing: {output.shape} or {output.squeeze().shape}")
+        plt.imshow(output, cmap="gray")
         plt.show()
-        return(img_zoom)
+        return(output)
     except Exception as error:
         raise RuntimeError({error})
 
