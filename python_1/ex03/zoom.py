@@ -3,16 +3,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def zoom(image:np.ndarray) -> np.ndarray:
+def zoom(image: np.ndarray) -> np.ndarray:
     """Zoooooooooooooooooooooooom"""
     try:
         img_zoom = image[100:500, 450:850]
         img_gray = img_zoom.mean(axis=2)
         output = img_gray[:, :, None]
-        print(f"New shape after slicing: {output.shape} or {output.squeeze().shape}")
+        print(f"New shape after slicing: {output.shape}", end="")
+        print(f" or {output.squeeze().shape}")
         plt.imshow(output, cmap="gray")
         plt.show()
-        return(output)
+        return (output)
     except Exception as error:
         raise RuntimeError({error})
 
