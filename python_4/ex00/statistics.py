@@ -1,4 +1,6 @@
 def ft_statistics(*args: any, **kwargs: any) -> None:
+    """function that can calculate mean, median, first and third quartile,\
+ standard deviation and variance"""
     for val in kwargs.values():
         try:
             if (val == "mean"):
